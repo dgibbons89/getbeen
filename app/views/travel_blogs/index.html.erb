@@ -1,0 +1,18 @@
+<div id="travel_blogs">
+
+    <% @travel_blogs.each do |travel_blog| %>
+    <div class="box panel panel-default">
+        <td><%= travel_blog.title %></td>
+       
+   
+   
+    <% end %>
+
+</div>
+</div>
+
+<%= link_to 'New Travel blog', new_travel_blog_path %>
+
+<div class="center">
+  <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+</div>

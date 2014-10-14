@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @drink_blog.title %>
+</p>
+
+<p>
+  <strong>Paragraph1:</strong>
+  <%= @drink_blog.paragraph1 %>
+</p>
+
+<p>
+  <strong>Paragraph2:</strong>
+  <%= @drink_blog.paragraph2 %>
+</p>
+
+<p>
+  <strong>Paragraph3:</strong>
+  <%= @drink_blog.paragraph3 %>
+</p>
+
+<p>
+  <strong>Paragraph4:</strong>
+  <%= @drink_blog.paragraph4 %>
+</p>
+
+<%= link_to 'Edit', edit_drink_blog_path(@drink_blog) %> |
+<%= link_to 'Back', drink_blogs_path %>

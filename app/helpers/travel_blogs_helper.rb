@@ -1,0 +1,2 @@
+module TravelBlogsHelper
+end

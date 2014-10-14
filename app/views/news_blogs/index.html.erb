@@ -1,0 +1,19 @@
+<div id="news_blogs">
+
+    <% @news_blogs.each do |news_blog| %>
+    <div class="box panel panel-default">
+        <td><%= news_blog.title %></td>
+       
+   
+   
+    <% end %>
+
+</div>
+</div>
+
+<%= link_to 'New News blog', new_news_blog_path %>
+
+
+<div class="center">
+  <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+</div>

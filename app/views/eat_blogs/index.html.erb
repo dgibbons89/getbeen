@@ -1,0 +1,18 @@
+<div id="eat_blogs">
+
+    <% @eat_blogs.each do |eat_blog| %>
+    <div class="box panel panel-default">
+        <td><%= eat_blog.title %></td>
+       
+   
+   
+    <% end %>
+
+</div>
+</div>
+
+<%= link_to 'New Eat blog', new_eat_blog_path %>
+
+<div class="center">
+  <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+</div>

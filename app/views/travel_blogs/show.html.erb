@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @travel_blog.title %>
+</p>
+
+<p>
+  <strong>Paragraph1:</strong>
+  <%= @travel_blog.paragraph1 %>
+</p>
+
+<p>
+  <strong>Paragraph2:</strong>
+  <%= @travel_blog.paragraph2 %>
+</p>
+
+<p>
+  <strong>Paragraph3:</strong>
+  <%= @travel_blog.paragraph3 %>
+</p>
+
+<p>
+  <strong>Paragraph4:</strong>
+  <%= @travel_blog.paragraph4 %>
+</p>
+
+<%= link_to 'Edit', edit_travel_blog_path(@travel_blog) %> |
+<%= link_to 'Back', travel_blogs_path %>

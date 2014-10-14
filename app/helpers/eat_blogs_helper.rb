@@ -1,0 +1,2 @@
+module EatBlogsHelper
+end
