@@ -1,3 +1,18 @@
+<div id="owl-demo" class="owl-carousel owl-theme">
+    <div class="item"><% @drink_blogs.each do |drink_blog| %>
+    <%= link_to image_tag(drink_blog.image.url(:medium)), drink_blog %>
+    <% end %></div>
+      <div class="item"><% @eat_blogs.each do |eat_blog| %>
+     <%= link_to image_tag(eat_blog.image.url(:medium)), eat_blog %>
+    <% end %></div>
+    <div class="item"><% @travel_blogs.each do |travel_blog| %>
+        <%= link_to image_tag(travel_blog.image.url(:medium)), travel_blog %>
+        <% end %> </div>
+        <div class="item"><% @news_blogs.each do |news_blog| %>
+    <%= link_to image_tag(news_blog.image.url(:medium)), news_blog %>
+    <% end %></div>
+
+</div>
 
 <div class="container">
 <div class="row" >
