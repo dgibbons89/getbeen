@@ -1,15 +1,17 @@
-<div id="travel_blogs">
+
+<div id="travel_blogs" class="transitions-enabled">
 
     <% @travel_blogs.each do |travel_blog| %>
     <div class="box panel panel-default">
         <td><%= travel_blog.title %></td>
-       
-   
+        <td><%= link_to image_tag(travel_blog.image.url(:medium)), travel_blog %></td>
+      
+   </div>
    
     <% end %>
 
 </div>
-</div>
+
 
 <%= link_to 'New Travel blog', new_travel_blog_path %>
 

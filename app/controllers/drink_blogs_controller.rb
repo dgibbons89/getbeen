@@ -44,6 +44,6 @@ end
     end
 
     def drink_blog_params
-      params.require(:drink_blog).permit(:title, :paragraph1, :paragraph2, :paragraph3, :paragraph4)
+      params.require(:drink_blog).permit(:title, :paragraph1, :paragraph2, :paragraph3, :paragraph4, :image)
     end
 end

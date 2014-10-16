@@ -43,6 +43,6 @@ end
     end
 
     def news_blog_params
-      params.require(:news_blog).permit(:title, :paragraph1, :paragraph2, :paragraph3, :paragraph4)
+      params.require(:news_blog).permit(:title, :paragraph1, :paragraph2, :paragraph3, :paragraph4, :image)
     end
 end

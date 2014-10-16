@@ -1,6 +1,51 @@
 
-<h1>alsdjhfj;asdkjf;alsfd</h1>
+<div class="container">
+<div class="row" >
+<div class="col-md-6">
+    <% @drink_blogs.each do |drink_blog| %>
+    <div class="box panel panel-default">
+        <td><%= drink_blog.title %></td>
+        <td> <%= link_to image_tag(drink_blog.image.url(:medium)), drink_blog %></td>
+   <% end %>
 
-<div class="center">
-  <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+</div>
+</div>
+
+<div class="row" >
+<div class="col-md-6">
+    <% @eat_blogs.each do |eat_blog| %>
+    <div class="box panel panel-default">
+        <td><%= eat_blog.title %></td>
+        <td><%= link_to image_tag(eat_blog.image.url(:medium)), eat_blog %></td>
+    <% end %>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="row" >
+<div class="col-md-6">
+    <% @travel_blogs.each do |travel_blog| %>
+    <div class="box panel panel-default">
+        <td><%= travel_blog.title %></td>
+        <td><%= link_to image_tag(travel_blog.image.url(:medium)), travel_blog %></td>
+    <% end %>
+
+</div>
+</div>
+
+<div class="row" >
+<div class="col-md-6">
+    <% @news_blogs.each do |news_blog| %>
+    <div class="box panel panel-default">
+        <td><%= news_blog.title %></td>
+        <td><%= link_to image_tag(news_blog.image.url(:medium)), news_blog %></td>
+    <% end %>
+
+</div>
+</div>
+</div>
+</div>
+
 </div>
