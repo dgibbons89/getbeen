@@ -1,13 +1,13 @@
 $body-bg: 										white;
-$font-family-sans-serif: 			'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-sans-serif: 			capriola;
 $navbar-height:								45px;
 $navbar-default-bg: 					white;
-$navbar-default-brand-color: 	#c0392b;
-$brand-primary: 							#c0392b;
+$navbar-default-brand-color: 	#159ccb;
+$brand-primary: 							#159ccb;
 $jumbotron-bg: 								white;
 
 @import 'bootstrap';
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 .center {
 	text-align: center;
 }
@@ -15,3 +15,4 @@ $jumbotron-bg: 								white;
 .navbar-brand {
 	font-weight: bold;
 }
+

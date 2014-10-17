@@ -1,19 +1,27 @@
+<%= link_to 'New Travel blog', new_travel_blog_path %>
+
+<div id="owl-demo" class="owl-carousel owl-theme">
+    <div class="item">
+        <% @travel_blogs.each do |travel_blog| %>
+        <%= link_to image_tag(travel_blog.image.url(:medium)), travel_blog %>
+        
+    </div>
+    <% end %> 
+</div>
+
 
 <div id="travel_blogs" class="transitions-enabled">
-
     <% @travel_blogs.each do |travel_blog| %>
     <div class="box panel panel-default">
         <td><%= travel_blog.title %></td>
         <td><%= link_to image_tag(travel_blog.image.url(:medium)), travel_blog %></td>
-      
    </div>
-   
-    <% end %>
+<% end %>
 
 </div>
 
 
-<%= link_to 'New Travel blog', new_travel_blog_path %>
+
 
 <div class="center">
   <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>

@@ -1,18 +1,26 @@
-<div id="eat_blogs" class="transitions-enabled">
+<%= link_to 'New Eat blog', new_eat_blog_path %>
 
+<div id="owl-demo" class="owl-carousel owl-theme">
+    <div class="item">
     <% @eat_blogs.each do |eat_blog| %>
+    <%= link_to image_tag(eat_blog.image.url(:medium)), eat_blog %>
+    </div><% end %>
+</div>
+
+<div id="news_blogs" class="transitions-enabled">
+	<% @eat_blogs.each do |eat_blog| %>
     <div class="box panel panel-default">
         <td><%= eat_blog.title %></td>
         <td><%= link_to image_tag(eat_blog.image.url(:medium)), eat_blog %></td>
-       
-   </div>
-   
+        
+
+   		</div>
     <% end %>
-
-
 </div>
 
-<%= link_to 'New Eat blog', new_eat_blog_path %>
+
+
+
 
 <div class="center">
   <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
