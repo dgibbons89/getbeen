@@ -7,10 +7,10 @@ $brand-primary: 							#159ccb;
 $jumbotron-bg: 								white;
 
 @import 'bootstrap';
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-.center {
-	text-align: center;
+.container {
+  width: 900px;
 }
+
 
 .navbar-brand {
 	font-weight: bold;
@@ -31,4 +31,3 @@ $jumbotron-bg: 								white;
     margin-right: 300px;
     float: right;
     }
-

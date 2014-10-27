@@ -1,29 +1,15 @@
-<p id="notice"><%= notice %></p>
-<%= image_tag @travel_blog.image.url(:large) %>
-<p>
-  <strong>Title:</strong>
-  <%= @travel_blog.title %>
-</p>
-
-<p>
-  <strong>Paragraph1:</strong>
-  <%= @travel_blog.paragraph1 %>
-</p>
-
-<p>
-  <strong>Paragraph2:</strong>
-  <%= @travel_blog.paragraph2 %>
-</p>
-
-<p>
-  <strong>Paragraph3:</strong>
-  <%= @travel_blog.paragraph3 %>
-</p>
-
-<p>
-  <strong>Paragraph4:</strong>
-  <%= @travel_blog.paragraph4 %>
-</p>
+<div class="image">
+	<%= image_tag @travel_blog.image.url(:large) %>
+  	<h3>Travel</h3>
+  <h2><%= @travel_blog.title %></h2>
+</div>
+</br>
+<div class="blogcontent">
+	<p><%= @travel_blog.paragraph1 %></p>
+	<p><%= @travel_blog.paragraph2 %></p>
+	<p><%= @travel_blog.paragraph3 %></p>
+	<p><%= @travel_blog.paragraph4 %></p>
+</div>
 
 <%= link_to 'Edit', edit_travel_blog_path(@travel_blog) %> |
 <%= link_to 'Back', travel_blogs_path %>

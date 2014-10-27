@@ -1,13 +1,13 @@
 // Place all the styles related to the news_blogs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#owl-demo .item img{
+#owl-news .item img{
     display: block;
     width: 100%;
     height: 500px;
 }
-#news_blogs {
-	margin: 0 auto;	
+.news_blogs {
+	margin: 0 auto;
 }
 
 .box {
@@ -21,3 +21,29 @@
 	height: 100%;
 }
 
+.image {
+  width: 100%;
+  position: relative;
+
+}
+h3 {
+   position: absolute; 
+   top: 200px; 
+   left: 50px; 
+   width: 100%;
+   color: white; 
+}
+h2 {
+	position: absolute;
+  top: 220px; 
+  left: 50px;
+  width: 100%; 
+  color: white;
+  
+}
+
+.blogcontent {
+  width: 700px;
+  font-family: 'Open Sans', sans-serif;
+  text-indent: 60px;
+}

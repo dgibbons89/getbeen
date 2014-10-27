@@ -8,6 +8,8 @@ $ ->
     paginationSpeed: 400
     singleItem: true
     setIntervatal: 500
+    slideSpeed: 500
+    autoPlay: 5000
 
   return
 

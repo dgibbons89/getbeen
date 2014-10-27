@@ -11,8 +11,8 @@
  * file per style scope.
  *
  *= require_tree .
- *= require 'masonry/transitions'
  *= require owl.carousel
  *= require owl.theme
+ *= require 'masonry/transitions'
  *= require_self
  */

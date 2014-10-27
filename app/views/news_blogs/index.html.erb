@@ -1,19 +1,22 @@
 <%= link_to 'New News blog', new_news_blog_path %>
 
-<div id="owl-demo" class="owl-carousel owl-theme">
+<div id="owl-news" class="owl-carousel owl-theme">
     <div class="item">
     <% @news_blogs.each do |news_blog| %>
     <%= link_to image_tag(news_blog.image.url(:medium)), news_blog %>
-    </div><% end %>
+    <% end %>
+    </div>
 </div>
 
-<div id="news_blogs" class="transitions-enabled">
-	<% @news_blogs.each do |news_blog| %>
+<div class="news_blogs" id="transitions-enabled">
+    <% @news_blogs.each do |news_blog| %>
     <div class="box panel panel-default">
-        <td><%= news_blog.title %></td>
         <td><%= link_to image_tag(news_blog.image.url(:medium)), news_blog %></td>
-   		</div>
-    <% end %>
+        <h3> News </h3>
+        <h2><%= news_blog.title %></h2>
+   	</div>
+  <% end %>
+
 </div>
 
 

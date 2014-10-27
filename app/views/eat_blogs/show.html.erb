@@ -1,29 +1,15 @@
-<p id="notice"><%= notice %></p>
-<%= image_tag @eat_blog.image.url(:large) %>
-<p>
-  <strong>Title:</strong>
-  <%= @eat_blog.title %>
-</p>
+<div class="image">
+	<%= image_tag @eat_blog.image.url(:large) %>
+	<h3>Eat</h3>
+	<h2><%= @eat_blog.title %></h2>
+</div>
 
-<p>
-  <strong>Paragraph1:</strong>
-  <%= @eat_blog.paragraph1 %>
-</p>
-
-<p>
-  <strong>Paragraph2:</strong>
-  <%= @eat_blog.paragraph2 %>
-</p>
-
-<p>
-  <strong>Paragraph3:</strong>
-  <%= @eat_blog.paragraph3 %>
-</p>
-
-<p>
-  <strong>Paragraph4:</strong>
-  <%= @eat_blog.paragraph4 %>
-</p>
+<div class="blogcontent">
+	<p><%= @eat_blog.paragraph1 %></p>
+	<p><%= @eat_blog.paragraph2 %></p>
+	<p><%= @eat_blog.paragraph3 %></p>
+	<p><%= @eat_blog.paragraph4 %></p>
+</div>
 
 <%= link_to 'Edit', edit_eat_blog_path(@eat_blog) %> |
 <%= link_to 'Back', eat_blogs_path %>

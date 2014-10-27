@@ -2,14 +2,15 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
-  $("#owl-demo").owlCarousel
+  $("#owl-travel").owlCarousel
     navigation: true # Show next and prev buttons
     slideSpeed: 300
     paginationSpeed: 400
     singleItem: true
     setIntervatal: 500
+    autoPlay: 5000
 
-  return
+  
 
 
 # "singleItem:true" is a shortcut for:
@@ -20,8 +21,8 @@ $ ->
 # itemsMobile : false
 
 $ ->
-  $('#travel_blogs').imagesLoaded ->
-    $('#travel_blogs').masonry
+  $('.travel_blogs').imagesLoaded ->
+    $('.travel_blogs').masonry
       itemSelector: '.box'
       isFitWidth: true
 

@@ -1,29 +1,15 @@
-<p id="notice"><%= notice %></p>
-      <%= image_tag @drink_blog.image.url(:large) %>
-<p>
-  <strong>Title:</strong>
-  <%= @drink_blog.title %>
-</p>
+<div class="image">
+  <%= image_tag @drink_blog.image.url(:large) %>
+  <h3>Drink</h3>
+  <h2><%= @drink_blog.title %></h2>
+</div>
 
-<p>
-  <strong>Paragraph1:</strong>
-  <%= @drink_blog.paragraph1 %>
-</p>
-
-<p>
-  <strong>Paragraph2:</strong>
-  <%= @drink_blog.paragraph2 %>
-</p>
-
-<p>
-  <strong>Paragraph3:</strong>
-  <%= @drink_blog.paragraph3 %>
-</p>
-
-<p>
-  <strong>Paragraph4:</strong>
-  <%= @drink_blog.paragraph4 %>
-</p>
+<div class="blogcontent">
+	<p><%= @drink_blog.paragraph1 %></p>
+	<p><%= @drink_blog.paragraph2 %></p>
+	<p><%= @drink_blog.paragraph3 %></p>
+	<p><%= @drink_blog.paragraph4 %></p>
+</div>
 
 <%= link_to 'Edit', edit_drink_blog_path(@drink_blog) %> |
 <%= link_to 'Back', drink_blogs_path %>

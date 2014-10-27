@@ -1,15 +1,31 @@
+
 <div id="owl-demo" class="owl-carousel owl-theme">
-    <div class="item"><% @drink_blogs.each do |drink_blog| %>
-    <%= link_to image_tag(drink_blog.image.url(:medium)), drink_blog %>
-    <% end %></div>
-      <div class="item"><% @eat_blogs.each do |eat_blog| %>
-     <%= link_to image_tag(eat_blog.image.url(:medium)), eat_blog %>
-    <% end %></div>
-    <div class="item"><% @travel_blogs.each do |travel_blog| %>
+    <div class="item">
+      <% @drink_blogs.each do |drink_blog| %>
+      <%= link_to image_tag(drink_blog.image.url(:medium)), drink_blog %>
+        <h3> Drink </h3>
+        <h2><%= drink_blog.title %></h2>
+      <% end %>
+    </div>
+      <div class="item">
+        <% @eat_blogs.each do |eat_blog| %>
+        <%= link_to image_tag(eat_blog.image.url(:medium)), eat_blog %>
+     <h3> Eat </h3>
+    <h2><%= eat_blog.title %></h2>
+  <% end %>
+  </div>
+    <div class="item">
+      <% @travel_blogs.each do |travel_blog| %>
         <%= link_to image_tag(travel_blog.image.url(:medium)), travel_blog %>
-        <% end %> </div>
-        <div class="item"><% @news_blogs.each do |news_blog| %>
+        <h3> Travel </h3>
+        <h2><%= travel_blog.title %></h2>
+        <% end %>
+         </div>
+        <div class="item">
+          <% @news_blogs.each do |news_blog| %>
     <%= link_to image_tag(news_blog.image.url(:medium)), news_blog %>
+         <h3> News </h3>
+        <h2><%= news_blog.title %></h2>
     <% end %></div>
 
 </div>
@@ -19,8 +35,10 @@
 <div class="col-md-6">
     <% @drink_blogs.each do |drink_blog| %>
     <div class="box panel panel-default">
-        <td><%= drink_blog.title %></td>
+        
         <td> <%= link_to image_tag(drink_blog.image.url(:medium)), drink_blog %></td>
+        <h3> Drink </h3>
+        <h2><%= drink_blog.title %></h2>
    <% end %>
 
 </div>
@@ -30,8 +48,10 @@
 <div class="col-md-6">
     <% @eat_blogs.each do |eat_blog| %>
     <div class="box panel panel-default">
-        <td><%= eat_blog.title %></td>
+        
         <td><%= link_to image_tag(eat_blog.image.url(:medium)), eat_blog %></td>
+        <h3> Eat </h3>
+        <h2><%= eat_blog.title %></h2>
     <% end %>
 
 </div>
@@ -43,8 +63,9 @@
 <div class="col-md-6">
     <% @travel_blogs.each do |travel_blog| %>
     <div class="box panel panel-default">
-        <td><%= travel_blog.title %></td>
         <td><%= link_to image_tag(travel_blog.image.url(:medium)), travel_blog %></td>
+        <h3> Travel </h3>
+        <h2><%= travel_blog.title %></h2>
     <% end %>
 
 </div>
@@ -54,8 +75,9 @@
 <div class="col-md-6">
     <% @news_blogs.each do |news_blog| %>
     <div class="box panel panel-default">
-        <td><%= news_blog.title %></td>
         <td><%= link_to image_tag(news_blog.image.url(:medium)), news_blog %></td>
+        <h3> News </h3>
+        <h2><%= news_blog.title %></h2>
     <% end %>
 
 </div>

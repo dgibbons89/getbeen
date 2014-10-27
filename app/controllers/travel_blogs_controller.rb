@@ -25,7 +25,7 @@ class TravelBlogsController < ApplicationController
 
   def update
     if @travel_blog.update(travel_blog_params)
-    redirect_to @picture, notice: 'Blog was successfully updated.'
+    redirect_to root_path, notice: 'Blog was successfully updated.'
     else
       render action: 'edit'
     end
