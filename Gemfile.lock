@@ -28,7 +28,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-    bcrypt (3.1.7)
+    bcrypt (3.1.9)
     bootstrap-sass (3.2.0.2)
       sass (~> 3.2)
     builder (3.2.2)
@@ -54,7 +54,7 @@ GEM
     execjs (2.2.2)
     hike (1.2.3)
     i18n (0.6.11)
-    jbuilder (2.2.2)
+    jbuilder (2.2.4)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (3.1.2)
@@ -164,7 +164,9 @@ DEPENDENCIES
   masonry-rails (~> 0.2.0)
   owlcarousel-rails
   paperclip (~> 4.2)
+  pg (~> 0.17.1)
   rails (= 4.1.5)
+  rails_12factor (~> 0.0.3)
   sass-rails (~> 4.0.3)
   sdoc
   simple_form (~> 3.0.2)
