@@ -1,11 +1,13 @@
 <%= link_to 'New Travel blog', new_travel_blog_path %>
 
-<div id="owl-travel" class="owl-carousel owl-theme">
-  <div class="item"><% @travel_blogs.each do |travel_blog| %>
-  <%= link_to image_tag(travel_blog.image.url(:medium)), travel_blog %>
-  
+<div id="owl-demo" class="owl-carousel owl-theme">
+  <% @travel_blogs.each do |travel_blog| %>
+    <div class="item">
+      <%= link_to image_tag(travel_blog.image.url(:medium)), travel_blog %>
+      <h3>Travel </h3>
+      <h2><%= travel_blog.title %></h2>
+    </div>
   <% end %>
-  </div>
 </div>
 
 <div class="travel_blogs" id="transitions-enabled">

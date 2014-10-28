@@ -1,0 +1,27 @@
+<h3>Guests</h3>
+<div class="span8">
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Registered</th>
+        <th>Role</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @guests.each do |guest| %>
+        <tr>
+          <td>
+            <%= guest.email %>
+          </td>
+          <td>
+            <%= guest.created_at.to_date %>
+          </td>
+         
+         </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

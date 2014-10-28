@@ -1,7 +1,7 @@
 // Place all the styles related to the travel_blogs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#owl-travel .item img{
+#owl-demo .item img{
     display: block;
     width: 100%;
     height: 500px;
@@ -29,16 +29,18 @@
 h3 {
    position: absolute; 
    top: 200px; 
-   left: 50px; 
+  
    width: 100%;
-   color: white; 
+   color: white;
+   text-align: center; 
 }
 h2 {
   position: absolute;
   top: 220px; 
-  left: 50px;
+
   width: 100%; 
   color: white;
+  text-align: center;
   
 }
 
@@ -47,3 +49,14 @@ h2 {
   font-family: 'Open Sans', sans-serif;
   text-indent: 60px;
 }
+#left_scroll, #right_scroll{  
+float:left;  
+height:130px;  
+width:15px;  
+background: #C0C0C0;  
+}  
+#left_scroll img, #right_scroll img{  
+/*styling*/  
+cursor: pointer;  
+cursor: hand;  
+} 

@@ -1,23 +1,69 @@
+<div id="footer">
+	<div class="page-container">
+	<div class="row">
 
-<div class="footer" id="footerleft">
-<h4><strong>Categories</strong></h4>
-          <h5><%= link_to "Eat", eat_blogs_path %> </h5>
-          <h5><%= link_to "Drink", drink_blogs_path %> </h5>
-          <h5><%= link_to "Travel", travel_blogs_path %></h5>
-          <h5><%= link_to "News",  news_blogs_path %> </h5>
-        
+  <div class="col-md-3">
+  	<ul>
+  	<h5 class="row-space-3">Stay in the know on where to go</h5>
+  		
+				<li>Sign up for our e-newsletter</li>
+
+
+  
+ 
+<div class="form-group">
+  <form action="<%= new_guest_url(@guest) %>" method="get" id="guest_form">
+    <input type="string" name="guest[email]" id="guest_email" placeholder="you@email.com">
+    <br><br>
+
+    <br><br>
+    <input type="submit" value="Sign Up" class="btn submit_button">
+  </form>
 </div>
 
 
-<div class="footer" id="footerright">
- <h4><strong>Social</strong></h3>
-	   <h5><a href="https://www.facebook.com/getbeen" target="_blank">Facebook</a></h5>
-		<h5><a href="http://instagram.com/getbeen/" target="_blank">Instagram</a> </h5>
-		<h5><a href="https://twitter.com/BeenMobileApp" target="_blank">Twitter</a></h5>
-		<h5><a href="http://www.pinterest.com/getbeen" target="_blank">Pinterest</a></h5>
-  
+			</ul>
+	</div>
+			
+	<div class="col-md-3">
+		<ul>
+  	<h5 class="row-space-3">Categories</h5>
+  		
+				  <li><%= link_to "Eat", eat_blogs_path %> </li>
+          <li><%= link_to "Drink", drink_blogs_path %> </li>
+          <li><%= link_to "Travel", travel_blogs_path %></li>
+          <li><%= link_to "News",  news_blogs_path %> </li>
+			</ul>
+	</div>
+				
+	<div class="col-md-3">
+			<ul>
+  	<h5 class="row-space-3">Social</h5>
+  	
+				<li><a href="https://www.facebook.com/getbeen" target="_blank">Facebook</a></li>
+				<li><a href="http://instagram.com/getbeen/" target="_blank">Instagram</a> </li>
+				<li><a href="https://twitter.com/BeenMobileApp" target="_blank">Twitter</a></li>
+				<li><a href="http://www.pinterest.com/getbeen" target="_blank">Pinterest</a></li>
+			</ul>
+	</div>
+	
+<div class="col-md-3">
+	<ul>
+  	<h5 class="row-space-3">About Been</h5>
+  		
+				<li>Been is a soon-to-launch mobile app that helps you find places to go based on friends' recommendations and keeps track of where you've been.</li>
+			</ul>
+	</div>
+	
+	</div>
 </div>
-  
 
 
-   
+
+	<div class="footer-content-container-slim container-semi-opaque">
+			<div class="container page-container">
+				<div class="row text-muted text-center row-space-8 row-space-top-6 copy-wrap">
+					<div id="copyright">© Been 2014</div>
+				</div>
+			</div>
+		</div>

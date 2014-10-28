@@ -1,11 +1,15 @@
 <%= link_to 'New Eat blog', new_eat_blog_path %>
 
-<div id="owl-eat" class="owl-carousel owl-theme">
+<div id="owl-demo" class="owl-carousel owl-theme">
+  <% @eat_blogs.each do |eat_blog| %>
     <div class="item">
-    <% @eat_blogs.each do |eat_blog| %>
+    
     <%= link_to image_tag(eat_blog.image.url(:medium)), eat_blog %>
-   <% end %>
+    <h3> Eat </h3>
+      <h2><%= eat_blog.title %></h2>
+   
     </div>
+    <% end %>
 </div>
 
 

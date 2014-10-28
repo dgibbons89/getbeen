@@ -2,8 +2,8 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
-  $("#owl-eat").owlCarousel
-    navigation: true # Show next and prev buttons
+  $("#owl-demo").owlCarousel
+    navigation: false # Show next and prev buttons
     slideSpeed: 300
     paginationSpeed: 400
     singleItem: true
