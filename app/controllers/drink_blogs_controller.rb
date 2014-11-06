@@ -3,7 +3,7 @@ class DrinkBlogsController < ApplicationController
 
   def index
     @drink_blogs = DrinkBlog.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 6)
-    
+    @guest = Guest.new
   end
 
   def show
@@ -11,6 +11,7 @@ class DrinkBlogsController < ApplicationController
   end
 
   def new
+    authorize! :new, @drink_blog, :message => 'Not authorized as an administrator.'
     @drink_blog = DrinkBlog.new
   
   end

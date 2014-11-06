@@ -3,6 +3,7 @@ class TravelBlogsController < ApplicationController
 
   def index
     @travel_blogs = TravelBlog.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 6)
+    @guest = Guest.new
    end
 
   def show
@@ -10,6 +11,7 @@ class TravelBlogsController < ApplicationController
   end
 
   def new
+    authorize! :new, @travel_blog, :message => 'Not authorized as an administrator.'
     @travel_blog = TravelBlog.new
   end
 

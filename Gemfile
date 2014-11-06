@@ -18,6 +18,12 @@ gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'masonry-rails', '~> 0.2.0'
 gem 'owlcarousel-rails'
+gem 'figaro'
+gem 'rolify'
+gem 'cancan'
+gem 'pusher'
+gem 'aws-sdk', '~> 1.57.0'
+
 
 
 group :development, :test do

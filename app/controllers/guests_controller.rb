@@ -11,17 +11,19 @@ class GuestsController < ApplicationController
   end
 
   def create
-    @guest = Guest.new(guest_params)
+    @guest = Guest.create(guest_params)
     if @guest.save
       flash[:success] = "Welcome! "
       redirect_to root_path
     else
-      render 'new'
+      render root_path
     end
   end
 
-   private
-    def guest_params
+  private
+  def guest_params
       params.require(:guest).permit(:email)
-    end
-end
+  end
+
+  end
+
