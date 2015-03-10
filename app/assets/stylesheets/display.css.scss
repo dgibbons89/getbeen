@@ -1,29 +1,34 @@
 // Place all the styles related to the Display controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+.container-display {
+  width: 900px;
+  
+  margin: auto;
+}
 
 
 #owl-demo .item img{
     display: block;
     width: 100%;
     height: 512px;
+}
 
-
-h3 {
-  
+.item h3 {
+   font-size: 30px; 
    top: 200px;
-   text-align: center; 
+   text-align: center;
    color: white; 
 }
-h2 {
-  top: 220px; 
+.item h2 {
+  top: 230px; 
   color: white;
-  
+  text-align: center;
+  font-size: 35px;
 }
-}
+
 .box {
-	margin: 5px;
+	margin: 1px;
 	width: 400px;
 	height: 400px;
 }
@@ -31,4 +36,16 @@ h2 {
 .box img {
 	width: 100%;
 	height: 100%;
+}
+.box h3 {
+   font-size: 30px; 
+   top: 200px;
+   text-align: center;
+   color: white; 
+}
+.box h2 {
+  top: 230px; 
+  color: white;
+  text-align: center;
+  font-size: 35px;
 }

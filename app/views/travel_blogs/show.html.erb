@@ -1,15 +1,21 @@
-<div class="image">
-	<%= image_tag @travel_blog.image.url(:large) %>
-  	<h3>Travel</h3>
-  <h2><%= @travel_blog.title %></h2>
-</div>
-</br>
-<div class="blogcontent">
+<section class="top">
+	<%= image_tag @travel_blog.image.url %>
+  	<h2 class="wide">Travel</h2>
+  	<h3 class="wide"><%= @travel_blog.title %></h3>
+
+<div class="max-wide has-padding">
 	<p><%= @travel_blog.paragraph1 %></p>
 	<p><%= @travel_blog.paragraph2 %></p>
 	<p><%= @travel_blog.paragraph3 %></p>
 	<p><%= @travel_blog.paragraph4 %></p>
-</div>
+
 
 <%= link_to 'Edit', edit_travel_blog_path(@travel_blog) %> |
-<%= link_to 'Back', travel_blogs_path %>
+<%= link_to 'Back', travel_blogs_path, class: "btn-primary btn-lg" %>
+  </div>
+
+
+
+
+
+</section>

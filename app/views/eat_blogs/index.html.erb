@@ -13,16 +13,17 @@
 </div>
 
 
-<div class="eat_blogs" id="transitions-enabled">
-  <% @eat_blogs.each do |eat_blog| %>
-    <div class="box panel panel-default">
-        <td><%= link_to image_tag(eat_blog.image.url(:medium)), eat_blog %></td>
-        <h3> Eat </h3>
-        <h2><%= eat_blog.title %></h2>
-      </div>
-    <% end %>
+<div class="container">
+  <div class="eat_blogs" id="transitions-enabled">
+    <% @eat_blogs.each do |eat_blog| %>
+      <div class="box panel panel-default">
+          <td><%= link_to image_tag(eat_blog.image.url(:medium)), eat_blog %></td>
+          <h3> Eat</h3>
+          <h2><%= eat_blog.title %></h2>
+        </div>
+      <% end %>
+  </div>
 </div>
-
 
 
 

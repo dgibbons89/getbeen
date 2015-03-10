@@ -11,8 +11,8 @@
      <% end %>
 </div>
 
-
-<div class="drink_blogs" id="transitions-enabled">
+<div class="container">
+  <div class="drink_blogs" id="transitions-enabled">
   <% @drink_blogs.each do |drink_blog| %>
     <div class="box panel panel-default">
         <td><%= link_to image_tag(drink_blog.image.url(:medium)), drink_blog %></td>
@@ -22,10 +22,11 @@
     <% end %>
 </div>
 
-
+</div>
 
 
 
 <div class="center">
   <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
 </div>
+

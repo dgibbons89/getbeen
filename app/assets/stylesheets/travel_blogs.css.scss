@@ -29,34 +29,23 @@
 h3 {
    position: absolute; 
    top: 200px; 
-  
-   width: 100%;
+   text-align: left;
+
    color: white;
-   text-align: center; 
+   
 }
 h2 {
   position: absolute;
   top: 220px; 
+  text-align: left;
 
-  width: 100%; 
+ 
   color: white;
-  text-align: center;
+  margin-left: 1rem;
   
 }
-
 .blogcontent {
   width: 700px;
   font-family: 'Open Sans', sans-serif;
   text-indent: 60px;
 }
-#left_scroll, #right_scroll{  
-float:left;  
-height:130px;  
-width:15px;  
-background: #C0C0C0;  
-}  
-#left_scroll img, #right_scroll img{  
-/*styling*/  
-cursor: pointer;  
-cursor: hand;  
-} 

@@ -3,7 +3,7 @@ class TravelBlogsController < ApplicationController
 
   def index
     @travel_blogs = TravelBlog.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 6)
-    @guest = Guest.new
+    
    end
 
   def show

@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   resources :eat_blogs
 
-  resources :guests, only: [:index, :new, :create]
+  
 
   devise_for :users
   root 'display#index'

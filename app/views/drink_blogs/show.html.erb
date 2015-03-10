@@ -1,15 +1,22 @@
-<div class="image">
-  <%= image_tag @drink_blog.image.url(:large) %>
-  <h3>Drink</h3>
-  <h2><%= @drink_blog.title %></h2>
+<section class="top">
+  <%= image_tag @drink_blog.image.url %>
+  <h2 class="wide">Drink</h2>
+  <h3 class="wide"><%= @drink_blog.title %></h3>
 </div>
 
-<div class="blogcontent">
+<div class="max-wide has-padding">
 	<p><%= @drink_blog.paragraph1 %></p>
 	<p><%= @drink_blog.paragraph2 %></p>
 	<p><%= @drink_blog.paragraph3 %></p>
 	<p><%= @drink_blog.paragraph4 %></p>
-</div>
+
 
 <%= link_to 'Edit', edit_drink_blog_path(@drink_blog) %> |
-<%= link_to 'Back', drink_blogs_path %>
+<%= link_to 'Back', drink_blogs_path, class: "btn-primary btn-lg" %>
+ </div>
+
+
+
+
+
+</section>

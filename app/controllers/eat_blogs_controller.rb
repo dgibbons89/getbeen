@@ -3,7 +3,7 @@ class EatBlogsController < ApplicationController
 
   def index
     @eat_blogs = EatBlog.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 6)
-    @guest = Guest.new
+   
   end
 
   def show

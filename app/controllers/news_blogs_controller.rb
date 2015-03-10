@@ -3,7 +3,7 @@ class NewsBlogsController < ApplicationController
 
   def index
     @news_blogs = NewsBlog.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 6)
-    @guest = Guest.new
+    
   end
 
   def show

@@ -1,17 +1,19 @@
-$body-bg: 										white;
-$font-family-sans-serif: 			capriola;
-$navbar-height:								45px;
-$navbar-default-bg: 					white;
-$navbar-default-brand-color: 	#159ccb;
-$brand-primary: 							white;
-$jumbotron-bg: 								white;
+$body-bg:                     white;
+$font-family-sans-serif:      gill;
+$navbar-height:               45px;
+$navbar-default-bg:           white;
+$navbar-default-brand-color:  white;
+$brand-primary:               #159ccb;
+$jumbotron-bg:                white;
 $footer-default-bg:           #515b5d;
 
 
 @import 'bootstrap';
-.container {
-  width: 900px;
+
+.push {
+  height: 200px;
 }
+
 
 
 .navbar-brand {
@@ -22,40 +24,77 @@ vertical-align: middle;
 margin-top: 10px;
 }
 
-#footer {
-  
-background-color: #515b5d; 
-text-color: white;
 
 
+.footer {
+  width: 100%;
+  background-color: #515b5d;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+
+
+  h5 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    
   }
-.page-container {
-	width: 900px;
- 	margin-left: auto;
-	margin-right: auto;
-  padding-left: 25px;
-  padding-right: 20px;
-}
-.col-md-3 {
-	width: 25%;
-} 
-.row-space-3 {
-margin-bottom: 15px;
-margin-top: 20px;
-font-weight: bold;
-color: white;
-}
+  h6 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    
+    line-height: 1.5em;
+  }
+  li {
+    list-style: none;
+    text-color: #fff;
+    
+  }
+  a {
+    text-color: #fff;
+  }
 
-ul {
- display: list;
- list-style: none;
+
 }
-li {
-  display: list;
+.top img {
+  width: 100%;
+  height: 511px;
+  }
+
+.top h3 {
+  position: absolute; 
+  top: 35%; 
+  font-size: 30px;
   color: white;
+  
+}
+.top h2 {
+  position: absolute; 
+  top: 30%;
+  font-size: 35px; 
+  color: white;
+   
 }
 
-
-
-
-
+.max-wide{
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+}
+.has-padding {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.top p {
+  text-indent: 60px;
+  padding-top: 1rem;
+  
+  font-size: 20px;
+}
+.wide {
+  margin-left: 33%;
+}
